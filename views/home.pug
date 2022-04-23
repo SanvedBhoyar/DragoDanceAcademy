@@ -1,0 +1,46 @@
+extends base.pug
+
+block scripts 
+    script(src="/static/index.js")
+
+block style 
+    style
+        include ../static/style.css
+
+block content   
+    section#introSection
+        div Welcome to Drago Dance Academy
+        div.small Eat Sleep Dance REPEAT
+
+    section#missionSection
+        div Our Mission 
+        div#cards
+            div.card
+                h3.card-heading Dance Perfection
+                div.card-box
+                    div.card-img
+                        img(src="/static/img/card-img-1.jpg")
+                    div.card-content
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe qui cum dicta facere asperiores minima dolorem nemo ullam labore sed!
+            div.card
+                h3.card-heading Dance the way you like
+                div.card-box
+                    div.card-img
+                        img(src="/static/img/card-img-2.jpg")
+                    div.card-content
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe qui cum dicta facere asperiores minima dolorem nemo ullam labore sed!
+            div.card
+                h3.card-heading Expert teaching
+                div.card-box
+                    div.card-img
+                        img(src="/static/img/card-img-3.jpg")
+                    div.card-content
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe qui cum dicta facere asperiores minima dolorem nemo ullam labore sed!
+
+    section#sponsorSection
+        div Our Sponsors
+        div.sponsors
+            img(src="/static/img/sponsor-logo-1.png" alt="Sponsors" class="sponsor-img")
+            img(src="/static/img/sponsor-logo-2.png" alt="Sponsors" class="sponsor-img")
+            img(src="/static/img/sponsor-logo-3.png" alt="Sponsors" class="sponsor-img")
+            img(src="/static/img/sponsor-logo-4.png" alt="Sponsors" class="sponsor-img")
